@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development | tagreed</title>
+    <link rel="stylesheet" href="/css/web-developer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="web-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Home</span>
+            </a>
+            <div class="nav-title">
+                <span class="nav-badge">Web Development</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="web-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-label">Projects & Learning</div>
+                <h1 class="web-title">Web Development</h1>
+                <p class="web-subtitle">
+                    Building responsive websites and web applications using HTML, CSS, and JavaScript. 
+                    These projects showcase my skills in creating functional, user-friendly web experiences.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="web-main">
+        <div class="container">
+            
+            <section class="projects-section">
+                <div class="section-header">
+                    <h2 class="section-title">Web Projects</h2>
+                    <p class="section-subtitle">Click on any project to view details</p>
+                </div>
+                
+                <div class="projects-grid">
+                    
+                    <div class="project-card" data-project="1">
+                        <div class="project-badge"><span>HTML/CSS</span></div>
+                        <div class="project-icon web-icon-1">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Portfolio Website</h3>
+                            <p class="project-description">
+                                A responsive portfolio website with clean design and smooth navigation.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="view-details">
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card" data-project="2">
+                        <div class="project-badge"><span>HTML/CSS</span></div>
+                        <div class="project-icon web-icon-2">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Environmental Awareness Website</h3>
+                            <p class="project-description">
+                                A responsive environmental awareness website with clean design and interactive features.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="view-details">
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </section>
+
+            <section class="skills-section">
+                <div class="section-header">
+                    <h2 class="section-title">Development Skills</h2>
+                    <p class="section-subtitle">Technologies and tools I use</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML5</h3>
+                        <p>Semantic markup and accessibility</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS3</h3>
+                        <p>Flexbox, Grid, and animations</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <p>ES6+ and DOM manipulation</p>
+                    </div>
+                    
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Responsive Design</h3>
+                        <p>Mobile-first approach</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-content">
+                <div class="modal-image-section">
+                    <div class="modal-image" id="modalImage">
+                        <i class="fas fa-image"></i>
+                        <p>Add project screenshot or preview image here</p>
+                    </div>
+                </div>
+                
+                <div class="modal-details">
+                    <h2 class="modal-title" id="modalTitle">Project Title</h2>
+                    
+                    <div class="modal-section">
+                        <h3 class="modal-section-title">
+                            <i class="fas fa-lightbulb"></i>
+                            Project Concept
+                        </h3>
+                        <p class="modal-description" id="modalDescription">Project description</p>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h3 class="modal-section-title">
+                            <i class="fas fa-tools"></i>
+                            Technologies Used
+                        </h3>
+                        <div class="modal-tech" id="modalTech"></div>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <a href="https://github.com/tagreed2000" class="modal-btn btn-github" id="modalGithub" target="_blank" rel="noopener">
+                            <i class="fas fa-external-link-alt"></i>                   
+                                 <span> Live Demo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-text">Tagreed Mohammad • Web Development</span>
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="ai-engineer.html" class="footer-link">AI Engineering</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/web-script.js"></script>
+</body>
+</html>

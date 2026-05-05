@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Engineering | Tagreed</title>
+    <link rel="stylesheet" href="/css/ai-engineer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="ai-nav">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Home</span>
+            </a>
+            <div class="nav-title">
+                <span class="nav-badge">AI Engineering</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="ai-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-label">Learning Journey</div>
+                <h1 class="ai-title">AI Engineering Projects</h1>
+                <p class="ai-subtitle">
+                    Exploring artificial intelligence through hands-on learning projects and experiments. 
+                    These projects represent my journey in understanding AI fundamentals, machine learning basics, and practical applications.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="ai-main">
+        <div class="container">
+            
+            <section class="projects-section">
+                <div class="section-header">
+                    <h2 class="section-title">Learning Projects</h2>
+                    <p class="section-subtitle">Click on any project to view details</p>
+                </div>
+               <!--
+                <div class="projects-grid">
+                    
+                    <div class="project-card" data-project="1">
+                        <div class="project-badge"><span>Learning</span></div>
+                        <div class="project-icon ai-icon-1">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">project name</h3>
+                            <p class="project-description">
+                                details project.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">2</span>
+                            </div>
+                        </div>
+                        <div class="view-details">
+                            <span>View Details</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                   
+ -->
+                    
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section class="learning-section">
+                <div class="section-header">
+                    <h2 class="section-title">What I'm Learning</h2>
+                    <p class="section-subtitle">Key areas I'm exploring in AI engineering</p>
+                </div>
+                
+                <div class="learning-grid">
+                    <div class="learning-card">
+                        <div class="learning-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Machine Learning Basics</h3>
+                        <p>Understanding fundamental ML concepts and algorithms.</p>
+                    </div>
+                    
+                    <div class="learning-card">
+                        <div class="learning-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>Natural Language Processing</h3>
+                        <p>Learning how computers understand human language.</p>
+                    </div>
+                    
+                    <div class="learning-card">
+                        <div class="learning-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Data Analysis</h3>
+                        <p>Exploring data manipulation and visualization.</p>
+                    </div>
+                    
+                    <div class="learning-card">
+                        <div class="learning-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Python Programming</h3>
+                        <p>Building strong Python skills for AI development.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-container">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-content">
+                <div class="modal-image-section">
+                    <div class="modal-image" id="modalImage">
+                        <i class="fas fa-image"></i>
+                        <p>Add project screenshot or preview image here</p>
+                    </div>
+                </div>
+                
+                <div class="modal-details">
+                    <h2 class="modal-title" id="modalTitle">Project Title</h2>
+                    
+                    <div class="modal-section">
+                        <h3 class="modal-section-title">
+                            <i class="fas fa-lightbulb"></i>
+                            Project Concept
+                        </h3>
+                        <p class="modal-description" id="modalDescription">Project description</p>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h3 class="modal-section-title">
+                            <i class="fas fa-tools"></i>
+                            Technologies Used
+                        </h3>
+                        <div class="modal-tech" id="modalTech"></div>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <a href="#" class="modal-btn btn-github" id="modalGithub" target="_blank" rel="noopener">
+                            <i class="fab fa-github"></i>
+                            <span>View on GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-text">Tagreed • AI Engineering</span>
+                <div class="footer-links">
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="web-developer.html" class="footer-link">Web Development</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/ai-script.js"></script>
+</body>
+</html>
