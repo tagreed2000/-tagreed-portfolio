@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             title: "Portfolio Website",
             description: "A fully responsive personal portfolio website built from scratch using HTML, CSS, and JavaScript. This project demonstrates proficiency in modern web development practices including semantic HTML, CSS Grid and Flexbox layouts, smooth animations, and interactive JavaScript features. The site is optimized for performance and accessibility across all devices.",
             technologies: ["HTML5", "CSS3", "JavaScript ES6+", "Responsive Design", "CSS Grid", "Flexbox"],
-            github: "[your-github-repo-url]",
+            github: "https://tagreed2000.github.io/-tagreed-portfolio/",
             image: "images/pro.png",
             imagePlaceholder: false
         } 
